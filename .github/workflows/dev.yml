@@ -1,7 +1,5 @@
 name: Deploy to Dev
 
-# concurrency: 1
-
 on: 
   push:
     branches:
