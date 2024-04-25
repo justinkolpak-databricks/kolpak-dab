@@ -1,0 +1,12 @@
+# The main pipeline for kolpak_dab_project
+resources:
+  pipelines:
+    kolpak_dab_project_pipeline:
+      name: kolpak_dab_project_pipeline
+      target: kolpak_dab_project_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: /Workspace/${workspace.file_path}/src
