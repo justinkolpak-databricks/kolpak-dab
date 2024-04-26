@@ -1,18 +1,18 @@
 name: Deploy to Dev
 
 on: 
-  push:
-    branches:
-      - main 
-  # pull_request:
-  #   types:
-  #     - opened
-  #     - synchronize
+  # push:
   #   branches:
-  #     - main
-  #   paths:
-  #     - "**/*.yml"
-  #     - "**/*.py"
+  #     - main 
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - "**/*.yml"
+      - "**/*.py"
 
 jobs:
   deploy:
