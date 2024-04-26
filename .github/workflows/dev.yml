@@ -10,9 +10,10 @@ on:
     paths:
       - "**/*.yml"
       - "**/*.py"
-  # push:
-  #   branches:
-  #     - main 
+  
+  push:
+    branches:
+      - main 
 jobs:
   deploy:
     name: "Deploy bundle"
