@@ -1,9 +1,6 @@
 name: Deploy to Dev
 
 on: 
-  # push:
-  #   branches:
-  #     - main 
   pull_request:
     types:
       - opened
@@ -13,7 +10,9 @@ on:
     paths:
       - "**/*.yml"
       - "**/*.py"
-
+  # push:
+  #   branches:
+  #     - main 
 jobs:
   deploy:
     name: "Deploy bundle"
