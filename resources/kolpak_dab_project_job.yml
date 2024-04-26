@@ -11,7 +11,7 @@ resources:
 
       email_notifications:
         on_failure:
-          - justin.kolpak@databricks.com
+          - justin.kolpak+3@gmail.com
 
       tasks:
         - task_key: notebook_task
